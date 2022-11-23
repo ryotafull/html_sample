@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nginx-loading-test-app:
+   image: nginx
+   volumes:
+   - ./templates:/usr/share/nginx/html
+   ports:
+      - 5556:80
